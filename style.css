@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;  /* this is done so that if we apply padding or border on any element its Actual Width isnot affected */
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /*CENTERS  HORIZONTALLY it needs width*/
+    justify-content: center; /*CENTERS  VERTICALLY its needs height  min-height*/
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #030E4F
+}
+body, .quote-input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    background-color:#F49F1C ;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 700px;
+    max-width: 90%;
+}
+.timer{
+    position: absolute;
+    top:2rem;
+    font-size: 3rem;
+    color: #9fafca;
+    font-weight: bold;
+}
+.quote-display{
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+}
+.quote-input{
+    background-color: transparent;
+    border: 4px solid rgba(94, 94, 4, 0.899) ;
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+.quote-input:focus{
+    border-color: black;
+}
+
+.correct{
+    color: blue;
+}
+.incorrect{
+    color: red;
+    text-decoration: underline;
+}
+.wow{
+    background-color:palevioletred ;
+}
+
+#next{
+    float: right;
+    line-height: 2;
+    width: 64px;
+    border-radius: 15px;
+    background-color: #b6b67a;
+    color: #89875a;
+    border: none;
+}
+.show{
+    background-color: #008970 !important;
+    color: white !important;
+}

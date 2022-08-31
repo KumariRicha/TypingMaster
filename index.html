@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/6f8781376c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css"/>
+        <script defer src="script.js"></script>
+        <title>Typing Master</title>
+    </head>
+    <body>
+        <div class="timer" id="timer">0</div>
+        <div class="container" id="container">
+            <div class="quote-display" id="quoteDisplay"></div>
+            <textarea class="quote-input" id="quoteInput" autofocus placeholder="Start Typing..."></textarea>
+            <button onclick="renderNewQuote()" id="next" disabled> Next ➜</button>
+        </div>
+    </body>
+</html>
+<!-- Instead of putting script tag in the body tag we can write it in head tag and use "defer" keyword to load it after body has loaded  -->
+;
